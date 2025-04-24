@@ -1,5 +1,5 @@
 // PostCard.jsx
-import LikeButton from './LikeButton';
+import LikeButton from '../components/likebutton';
 
 export default function PostCard({ post }) {
   const cardStyle = {
@@ -33,7 +33,7 @@ export default function PostCard({ post }) {
 
   return (
     <div style={cardStyle}>
-      <img src={post.profilePic} alt="profile" style={profileImgStyle} />
+      <img src={post.profileImage} alt="profile" style={profileImgStyle} />
       <div>
         <p style={usernameStyle}>{post.username}</p>
         <p style={contentStyle}>{post.content}</p>

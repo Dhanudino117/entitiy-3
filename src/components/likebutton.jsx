@@ -1,15 +1,14 @@
 // LikeButton.jsx
-import { useState } from 'react';
-
+import { useState } from "react";
 export default function LikeButton() {
   const [liked, setLiked] = useState(false);
 
   const buttonStyle = {
     padding: '8px 16px',
     borderRadius: '999px',
-    color: '#fff',
+    color: liked ? "white" : "black",
     fontWeight: '600',
-    backgroundColor: liked ? 'red' : 'gray',
+    backgroundColor: liked ? 'red' : '#C0C0C0',
     border: 'none',
     cursor: 'pointer',
     transition: 'background-color 0.3s',
@@ -17,7 +16,7 @@ export default function LikeButton() {
 
   return (
     <button style={buttonStyle} onClick={() => setLiked(!liked)}>
-      {liked ? 'Liked ❤️' : 'Like 🤍'}
+      {liked ? 'Liked🤍 ' : 'Like ❤️'}
     </button>
   );
 }

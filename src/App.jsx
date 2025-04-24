@@ -6,8 +6,7 @@ function App() {
   const initialPosts = [
     {
       id: 1,
-      profileImage:
-        'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg',
+      profileImage:"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
       username: 'alice',
       content: 'This is my first post!',
       isLiked: false,
